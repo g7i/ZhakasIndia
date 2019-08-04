@@ -394,7 +394,7 @@ body:after {
   z-index: 2000;
   padding-top: 20px;
   background: #fff;
-  height: calc(100vh);
+  height: 100%;
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
   transform: translateX(110%);
@@ -579,7 +579,7 @@ body:after {
       top: 0;
       background: rgba(0, 0, 0, 0.1); }
   .site-blocks-cover.overflow-hidden {
-    overflow: hidden; }
+    overflow: scroll; }
   .site-blocks-cover .player {
     position: absolute;
     bottom: -250px;
@@ -604,6 +604,7 @@ body:after {
         font-size: 2rem; } }
   .site-blocks-cover .cover-img {
     border: 20px solid #fff;
+   
     -webkit-box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3); }
     @media (min-width: 768px) {
@@ -615,6 +616,7 @@ body:after {
     position: absolute;
     bottom: -100px;
     left: -100px;
+  
     max-width: 300px;
     border: 20px solid #fff;
     -webkit-box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3);

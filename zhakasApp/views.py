@@ -19,3 +19,6 @@ def community(request):
     flags = [True if i%2==0 else False for i in range(len(persons))]
     persons = zip(flags,persons)
     return render(request,'community.html',{'persons':persons})
+
+def read(request):
+    return render(request,'read.html')

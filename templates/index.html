@@ -3,12 +3,12 @@
 {% load staticfiles %}
 <link rel="stylesheet" href="{% static 'css/me.css' %}">
 <section class="site-blocks-cover overflow-hidden bg-light">
-  <div class="container"style="margin-top:0px;" >
+  <div class="container" style="margin-top:0px;" >
     <div class="row">
       <div class="col-md-5 mr-auto align-self-center text-center text-md-left">
         <div class="intro-text">
           <h1>Many Products One Store</h1>
-          <p class="mb-4">ZhakasIndia is a complete solution to provide a variety of eatables right at your doorsteps.Founded in the year 2016, Zhakas India is an india based organization....<a href="{% url 'about' %}" style="color:#9c2c2c">Read More</a></p> 
+          <p class="mb-4">ZhakasIndia is a complete solution to provide a variety of eatables right at your doorsteps.Founded in the year 2016, Zhakas India is an india based organization....<a href="{% url 'read' %}" style="color:#9c2c2c">Read More</a></p> 
           <p><a href="http://www.zhakasindia.com" class="btn btn-primary">Visit Us</a></p>
         </div>
       </div>
@@ -30,15 +30,15 @@
       </div>
     </div><div class="row no-gutters justify-content-center" style="width: 100%" data-aos="fade-up" id="mlink">
       <div class="col-xs-4 justify-content-center" style="margin: auto;">
-      <img src="{% static 'comm.jpeg' %}" alt="Community" height=200px width=250px><div class="wrapper"><span class="square">
+      <img src="{% static 'logo.png' %}" alt="Community" height=200px width=250px><div class="wrapper"><span class="square">
           <a class="tenth before after" href="{% url 'community' %}">Community</a>
         </span></div></div>
       <div class="col-xs-4 justify-content-center" style="margin: auto;">
-      <img height=200px width=250px src="{% static 'about.jpeg' %}" alt="Products"><div class="wrapper"><span class="square">
+      <img height=200px width=250px src="{% static 'logo.png' %}" alt="Products"><div class="wrapper"><span class="square">
           <a class="tenth before after" href="{% url 'about' %}">About Us</a>
         </span></div></div>
       <div class="col-xs-4 justify-content-center" style="margin: auto;">
-      <img  height=200px width=250px src="{% static 'contact.jpeg' %}" alt="Contact Us"><div class="wrapper"><span class="square">
+      <img  height=200px width=250px src="{% static 'logo.png' %}" alt="Contact Us"><div class="wrapper"><span class="square">
           <a class="tenth before after" href="{% url 'contact' %}">Contact Us</a>
         </span></div>
     </div> </div>   
