@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'zhakasdb',
         'USER':'postgres',
         'PASSWORD':'zhakasdb',
-        'HOST':'localhost',
+        'HOST':'zhakas-db.ckmj0dfbpcgk.us-east-2.rds.amazonaws.com',
         'PORT':'5432',
     }
 }
@@ -136,5 +136,5 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'static')
+MEDIA_URL = '/static/'
