@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="site-section" id="pricing-section">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-lg-7 text-center heading-section mb-5">
+          <br>
+          <h2 class="mb-2 text-black heading">Community</h2>
+          <p>These are some of the ZhakasIndians who work with us.</p>
+        </div>
+      </div>
+    
+      <div class="row no-gutters">
+            {% for flag,person in persons %}
+            {% if flag %}
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary p-3 p-md-5" data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px">
+        {% else %}
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-dark p-3 p-md-5" data-aos="fade-up" data-aos-delay="" style="margin-bottom: 30px">
+        {% endif %}
+        <div style="width: 100%">
+        <img src="{{person.image.url}}" alt="Image" height=250 width=250 style="margin:auto;display:block;margin-bottom:20px"/></div>
+          <div class="pricing">
+            <h3 class="text-center text-white text-uppercase">{{person.name}}</h3>
+            <div class="price text-center mb-4 ">
+              <span><span></span>{{person.role}}</span>
+            </div>
+            </div>
+          
+</div>
+        {% endfor %}
+      </div>
+</div>
+  </section>
+
+<section class="site-section" id="about-section">
+    <div class="container">
+{% endblock content %}

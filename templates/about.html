@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+<section class="site-section" id="about-section">
+    <div class="container"><div style="padding :10px 10px 10px 10px ;margin-top:80px;margin-bottom:40px;background-image:linear-gradient(120deg,#d67676,#eed48e,#d67676);"><h2 style="text-align: center;"><strong>
+ZHAKAS INDIA</strong></h2>
+Founded in the year 2016, Zhakas India is an india based organization producing exquisite food products. The country where almost every day is celebrated as a festival, We came up with a mission to cater to the taste and harmony associated with the culture. Zhakas itself means superlative, marvelous, noteworthy so it becomes our responsibility to serve the people with mouth watering products combined with a care for occasions.
+Founder group is having simple vision of serving society in a better way. Our dream is to make people happy by adding different and delicious flavors to the occasions. We believe manufacturing good quality products in reasonable price is an art. We are committed to excel in that art.</div>
+
+<div style="padding :10px 10px 10px 10px ;margin-top:80px;margin-bottom:40px;background-image:linear-gradient(120deg,#d67676,#eed48e,#d67676);"><h2 style="text-align: center;"><strong>
+  OUR VISION</strong></h2>
+To cater to taste buds of people worldwide and also serve to our social responsibility of adding to the employment opportunities across nation and create a harmony in society.</div>
+
+<div style="padding :10px 10px 10px 10px ;margin-top:80px;margin-bottom:40px;background-image:linear-gradient(120deg,#d67676,#eed48e,#d67676);"><h2 style="text-align: center;"><strong>
+    OUR MISSION</strong></h2>
+Our mission is to provide the world with superlative and delicious food products combined with purity and taste .</div>
+
+<div style="padding :10px 10px 10px 10px ;margin-top:80px;margin-bottom:40px;background-image:linear-gradient(120deg,#d67676,#eed48e,#d67676);"><h2 style="text-align: center;"><strong>
+      OUR TEAM</strong></h2>
+      Our group believes in team work. We want to be recognized as an organization because of the values we associate with our team. We, as a team, strive to combine physical, emotional and logical elements into one exceptional consumer experience.</div>
+
+
+{% for info in profiles %}
+<div class="row hover-1-wrap mb-5 mb-lg-0">
+    <div class="col-12">
+      <div class="row">
+        <div class="mb-4 mb-lg-0 col-lg-6"  data-aos="fade-right">
+                <a href="{{info.image.url}}" class="rotate-reverse10">
+                  <img src="{{info.image.url}}" height=300 width=300 alt="Image" class="img-fluid" style="border: 5px solid #9c2c2c;">
+                </a>
+              </div>
+              <div class="col-lg-6 ml-auto align-self-center"  data-aos="fade-left">
+          <h2 class="text-black">{{info.name}}</h2>
+          <strong>{{info.role}}</strong>
+          <p class="mb-4">{{info.body}}.</p>
+          <!-- <p><a href="#" class="btn btn-primary">Read More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div><br><br>
+{% endfor %}
+<section class="site-section" id="about-section">
+    <div class="container">
+{% endblock content %}
