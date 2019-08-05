@@ -155,7 +155,7 @@ body:after {
   color: rgba(0, 0, 0, 0.5); }
 
 .hover-bg-enlarge {
-  overflow: hidden;
+  overflow: scroll;
   position: relative; }
   @media (max-width: 991.98px) {
     .hover-bg-enlarge {
@@ -394,7 +394,7 @@ body:after {
   z-index: 2000;
   padding-top: 20px;
   background: #fff;
-  height: 100%;
+  height: calc(100vh);
   -webkit-transform: translateX(110%);
   -ms-transform: translateX(110%);
   transform: translateX(110%);
@@ -579,8 +579,7 @@ body:after {
       top: 0;
       background: rgba(0, 0, 0, 0.1); }
   .site-blocks-cover.overflow-hidden {
-    overflow: scroll;
-  display: inline; }
+    overflow: scroll; }
   .site-blocks-cover .player {
     position: absolute;
     bottom: -250px;
@@ -590,8 +589,7 @@ body:after {
     min-height: 600px; }
   .site-blocks-cover.inner-page-cover, .site-blocks-cover.inner-page-cover > .container > .row {
     min-height: 600px;
-    height: calc(100vh);
- }
+    height: calc(100vh); }
   @media (max-width: 991.98px) {
     .site-blocks-cover .intro-text {
       margin-top: 30%; } }
@@ -605,7 +603,6 @@ body:after {
         font-size: 2rem; } }
   .site-blocks-cover .cover-img {
     border: 20px solid #fff;
-   
     -webkit-box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3); }
     @media (min-width: 768px) {
@@ -617,7 +614,6 @@ body:after {
     position: absolute;
     bottom: -100px;
     left: -100px;
-  
     max-width: 300px;
     border: 20px solid #fff;
     -webkit-box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3);
@@ -715,7 +711,7 @@ body:after {
 
 .post-entry {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   border: 1px solid #e6e6e6; }
   .post-entry, .post-entry .text {
     border-radius: 4px;
@@ -725,7 +721,7 @@ body:after {
     font-weight: normal;
     letter-spacing: .1em; }
   .post-entry .image {
-    overflow: hidden;
+    overflow: scroll;
     position: relative; }
     .post-entry .image img {
       -webkit-transition: .3s all ease;
@@ -1041,7 +1037,7 @@ body:after {
 .unit-1 {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
   display: block; }
   .unit-1:after {
     content: "";
@@ -1328,7 +1324,7 @@ body:after {
   margin: 0;
   padding: 0;
   position: relative;
-  overflow: hidden; }
+  overflow: scroll; }
 
 .team-member .social {
   position: absolute;
@@ -1469,7 +1465,18 @@ body:after {
     .pricing .price > span > span {
       font-size: 2rem;
       color: #fff; }
-  
+  .pricing ul {
+    text-align: left; }
+    .pricing ul li {
+      color: #fff;
+      margin-bottom: 20px; }
+      .pricing ul li:before {
+        color: #fff !important; }
+    .pricing ul li.remove {
+      text-decoration: line-through;
+      color: rgba(255, 255, 255, 0.4); }
+      .pricing ul li.remove:before {
+        color: rgba(255, 255, 255, 0.4); }
 
 /* Isotope Transitions
 ------------------------------- */
