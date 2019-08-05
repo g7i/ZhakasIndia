@@ -25,7 +25,7 @@ SECRET_KEY = '-grotuy(+v%o5^6n9hohk5*8gq&5#*f192fcw+xt(p(-oswqk-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['zhakasindian.herokuapp.com','localhost']
 
 
 # Application definition
