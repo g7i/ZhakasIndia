@@ -605,25 +605,29 @@ body:after {
     border: 20px solid #fff;
     -webkit-box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3); }
-    @media (overflow-block:scroll) {
+
       .site-blocks-cover .cover-img {
         -webkit-transform: rotate(10deg);
         -ms-transform: rotate(10deg);
-        transform: rotate(10deg); } }
+        transform: rotate(10deg); } 
   .site-blocks-cover .cover-img2 {
     position: absolute;
     bottom: -100px;
     left: -100px;
- 
     max-width: 300px;
     border: 20px solid #fff;
     -webkit-box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.3); }
-    @media (overflow-block:scroll) {
+   
       .site-blocks-cover .cover-img2 {
         -webkit-transform: rotate(-10deg);
         -ms-transform: rotate(-10deg);
-        transform: rotate(-10deg); } }
+        transform: rotate(-10deg); } 
+        @media (max-width: 768px){
+          .site-blocks-cover .cover-img2 {height: auto;width: 30vw;bottom: 0px;
+            left: 60px;}
+          .site-blocks-cover .cover-img {height: auto;width: 50vw;left: 20px;}
+        }
   .site-blocks-cover p {
     color: rgb(98, 98, 100);
     font-size: 1.2rem;
