@@ -5,7 +5,7 @@ gunicorn==19.9.0
 Jinja2==2.10.1
 oauth==1.0.1
 oauthlib==2.0.6
-Pillow==5.2.0
+Pillow==8.2.0
 psycopg2-binary==2.8.3
 pytz==2018.5
 whitenoise==4.1.3
